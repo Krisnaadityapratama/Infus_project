@@ -31,7 +31,7 @@
 
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container">
-			<a class="navbar-brand" href="{{route('index')}}">S I F I S</a>
+			<a class="navbar-brand" href="{{route('index')}}">OSPKI-IoT</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 			</button>
@@ -50,8 +50,8 @@
 			<div class="container mainDevice">
 
 					<!-- Page Heading -->
-					<div class="d-sm-flex align-items-center justify-content-between mb-4 p">
-						<h3 class=" font-weight-bold text-info text-uppercase mb-1">Pasien</h3>
+					<div class="d-sm-flex align-items-center justify-content-between mb-4 mt-5 p">
+						<h3 class=" font-weight-bold text-info text-uppercase mt-5">P a s i e n</h3>
 					</div>
 					
 					<!-- Content Row -->
