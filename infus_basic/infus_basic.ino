@@ -201,7 +201,7 @@ void getDropRateFromServer() {
 
 
 void controlServo(int dropRate) {
-  int angle = map(dropRate, 0, 100, 0, 180);
+  int angle = map(dropRate, 0, 100, 180, 0);
   myservo.write(angle);
   delay(1000);
 }
