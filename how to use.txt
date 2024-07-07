@@ -7,9 +7,6 @@ running
 1.php artisan install vendor
 2.clone .envexample change to .env, change database, user, password
 3.php artisan migrate
-4.php artisan migrate --path=/app/database/migrations/pasiens.php
-5.php artisan migrate --path=/app/database/migrations/values.php
-6.php artisan migrate --path=/app/database/migrations/sensors.php
-7.php artisan migrate seed
-8.php artisan serve
-9."open ip in chrome/browser"
+4.php artisan migrate db:seed
+5.php artisan serve
+6."open ip in chrome/browser"
