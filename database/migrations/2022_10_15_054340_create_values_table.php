@@ -14,14 +14,15 @@ class CreateValuesTable extends Migration
     public function up()
     {
         Schema::create('values', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('idPasien')->unsigned();
+            $table->id();
             $table->integer("tpm")->nullable();
             $table->decimal("kapasitas")->nullable();
             $table->decimal("prediksi")->nullable();
-            $table->foreign("idPasien")->references('id')->on('pasiens')->onDelete('cascade');
             $table->string("status")->nullable();
             $table->timestamps();
+
+                                    // Tambahkan foreign key dengan onDelete cascade
+            $table->foreignId('IdPasien')->nullable()->constrained('pasiens')->onDelete('cascade');
         });
     }
 

@@ -14,8 +14,8 @@ class CreatePasiensTable extends Migration
     public function up()
     {
         Schema::create('pasiens', function (Blueprint $table) {
-            $table->increments('id');
-            $table->unsignedInteger('alat'); // Mengubah tipe data menjadi unsignedInteger
+            $table->id();
+            $table->string('alat'); // Mengubah tipe data menjadi unsignedInteger
             $table->string('nama')->nullable();
             $table->string('ruang')->nullable();
             $table->integer('status');
@@ -23,6 +23,7 @@ class CreatePasiensTable extends Migration
 
             // Definisi foreign key
             $table->foreign('alat')->references('id')->on('sensors')->onDelete('cascade');
+            
         });
     }
 
