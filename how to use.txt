@@ -1,12 +1,32 @@
 requirement
 1.php 7.4.0 
 2.xampp
+3.composer
 
+
+running di terminal vscode
+1.composer install
+2.cp .envexample .env (Ubah nama database, username dan password didalam file .env)
+3.php artisan key:generate
+4.php artisan migrate
+5.php artisan db:seed --class="Database\Seeders\UserSeeder"
+6.php artisan serve
+7."open ip in chrome/browser"
+
+
+koneksi ke IOT
+1.ubah nama file menjadi iot (letakkan pada htdoc)
+2.running menggunakan ip dari hospot handphone.
+ a.hospot handphone ke laptop
+ b.cek ip menggunakan ipconfig
+ c.kemudian jalankan website dengan ip yang didapat
 
 running
-1.php artisan install vendor
-2.clone .envexample change to .env, change database, user, password
-3.php artisan migrate
-4.php artisan migrate db:seed
-5.php artisan serve
-6."open ip in chrome/browser"
+php artisan serve --host 192.168.18.30 --port 8000
+ubah ip diatas menjadi ip dari laptop.
+
+untuk alat iot
+samakan ip yang digunakan untuk website pada codingan iot
+
+*notes
+hanya bisa menggunakan hospot biasa 2.4hz dan tidak bisa hospot dari kampus atau sekolah karena biasanya banned running local. boleh menggunakan lan dari router sendiri
