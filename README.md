@@ -154,5 +154,3 @@ Proyek ini menggunakan lisensi MIT.
 
 Terima kasih telah menggunakan proyek ini.
 Semoga bermanfaat!
-
-```
