@@ -156,5 +156,3 @@ Terima kasih telah menggunakan proyek ini.
 Semoga bermanfaat!
 
 ```
-
----
